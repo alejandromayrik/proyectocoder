@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(231, 181, 14);
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../img/fondo.jpg);
+
+}
+
+
+
+
+.prueba {
+    color: black;
+    height: 300px;
+    }
+
+.estudios {
+    color: red;
+    text-align: center;
+}
+.estudios__lista{
+    color: black;
+}
+
+/* NAV */
+.nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr)  ;
+    grid-template-rows: (1, 1fr);
+    grid-template-areas:
+    "nav__logo nav__item1  nav__item2 nav__item3 nav__item4 nav__item5 nav__search6";
+    gap: 5px;
+    list-style: none;
+    padding-bottom: 25px;
+    }
+
+    .nav__item1 {
+        grid-area: nav__item1;
+        text-align: center;
+        padding-top:25%;   
+    } 
+
+   .nav__item2 {
+    grid-area: nav__item2;
+    text-align: center;
+    padding-top:25%;   
+    } 
+  .nav__item3 {
+        grid-area: nav__item3;
+        text-align: center;
+        padding-top:25%;   
+    }
+    
+    .nav__item4 {
+        grid-area: nav__item4;
+        text-align: center;
+        padding-top:25%;   
+    }
+    .nav__item5 {
+        grid-area: nav__item5;
+        text-align: center;
+        padding-top:25%;   
+    } 
+    .nav__search6 {
+        grid-area: nav__search6;
+        text-align: center;
+        padding-top:25%;   
+    }  
+     
+/* MAIN CON GRID*/
+
+
+.galeria {
+display: grid;   
+grid-template-columns: repeat(2, 1fr)  ;
+grid-template-rows: repeat(3, 1fr);
+grid-template-areas:
+"card__image1 card__image2" 
+"card__image3 card__image4"
+"card__image5 card__image6";
+gap: 10px;
+
+}
+
+
+.tituloGal {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Shizuru', cursive;
+}
+
+.card__image1 {
+grid-area: card__image1;
+width: 100%;
+
+}
+
+.card__image2 {
+    grid-area: card__image2;
+    width: 100%;
+    
+}
+.card__image3 {
+        grid-area: card__image3;
+        width: 100%;
+        
+}
+
+.card__image4 {
+    grid-area: card__image4;
+    width: 100%;
+    
+}
+.card__image5 {
+    grid-area: card__image5;
+    width: 100%;
+    
+}
+.card__image6 {
+    grid-area: card__image6;
+    width: 100%;
+    
+}
+
+
+
+/*formularoio*/
+li{
+    grid-area: nav__search6;
+        text-align: center;
+       
+}
+.form1 {
+    display: grid;
+    background: rgb(88, 231, 88);
+    border: 1px solid #c1c1c1;
+  }
+  form input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+  form button {
+    background: lightgrey;
+    width: 100%;
+    border: 0;
+  }
+  form button:hover {
+    background: gold;
+  }
+  
+   
+  input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+  input:focus {
+    outline: 3px solid gold;
+  }
+  
+  @media (min-width: 400px) {
+    form {
+      grid-template-columns: 200px 1fr;
+      grid-gap: 16px;
+    }
+    
+    input,
+    button {
+      grid-column: 2 / 3;
+    }
+  }
+
+.formulario {
+    color: black;
+    text-align: center;
+}
+
+/*TITULOJOB*/
+
+.titulojob {
+    text-align: center;
+    color: black;
+    
+
+}
+
+
+
+/*FOOTER GRID*/
+.footer {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1, 1fr;
+    text-align: left;
+    background-color:black;
+    padding: 10px;
+    
+
+
+      
+}
+.footer__creditos {
+    text-align: right;
+}
+
+
